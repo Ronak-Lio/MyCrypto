@@ -37,7 +37,6 @@ contract("DappTokenSale", function (accounts) {
       })
       .then(function (instance) {
         tokenSaleInstance = instance;
-
         return tokenInstance.transfer(tokenSaleInstance.address , tokensAvaiable)
       }).then(function (receipt) {
         numberOfTokens = 10;
